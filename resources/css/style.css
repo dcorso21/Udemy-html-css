@@ -162,13 +162,21 @@ h2:after {
             transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo{
     height: 100px;
     width: auto;
     float: left;
-    /* vertical-align: center; */
-    margin-top: 30px;
+    margin-top: 20px;
 }
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+
 /* 
 --------------------- 
 Features
@@ -214,6 +222,39 @@ Nav
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.966);
+    box-shadow: 0 2px 2px rgb(204, 204, 204);
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: #555;
+
+}
+
+.sticky .logo-black{
+    display: block;
+}
+.sticky .logo{
+    display: none;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 18px;
+}
+
+
+/* Sticky Nav */
+
 /* 
 --------------------- 
 Generic 
