@@ -27,6 +27,7 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -230,6 +231,7 @@ Nav
     width: 100%;
     background-color: rgba(255, 255, 255, 0.966);
     box-shadow: 0 2px 2px rgb(204, 204, 204);
+    z-index: 9999;
 }
 
 .sticky .main-nav li a:link,
@@ -246,7 +248,7 @@ Nav
     display: none;
 }
 
-.main-nav {
+.sticky .main-nav {
     float: right;
     list-style: none;
     margin-top: 18px;
@@ -685,4 +687,13 @@ footer p{
     text-align: center;
     margin-top: 20px;
     font-size: 80%;
+}
+
+/* Animations */
+
+.js--wp-1{
+    opacity: 0;
+}
+.js--wp-1 .animated{
+    opacity: 1;
 }

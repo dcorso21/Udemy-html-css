@@ -3,10 +3,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="vendors/css/normalize.css" />
         <link rel="stylesheet" href="vendors/css/grid.css" />
+        <link rel="stylesheet" href="vendors/css/animate.css" />
         <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
         <link rel="stylesheet" href="resources/css/style.css" />
         <link rel="stylesheet" href="resources/css/queries.css" />
-
         <link
             href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
             rel="stylesheet"
@@ -16,54 +16,52 @@
     </head>
     <body>
         <header>
-            <nav class="sticky">
+            <nav>
                 <div class="row">
                     <img
                         src="resources/img/logo-white.png"
-                        alt="OmniFood logo"
+                        alt="Omnifood logo"
                         class="logo"
                     />
                     <img
                         src="resources/img/logo.png"
-                        alt="OmniFood logo"
+                        alt="Omnifood logo"
                         class="logo-black"
                     />
-                    <ul class="main-nav">
-                        <li>
-                            <a href="#">Food Delivery</a>
-                        </li>
-                        <li>
-                            <a href="#">How it Works</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Cities</a>
-                        </li>
-                        <li>
-                            <a href="#">Sign Up</a>
-                        </li>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"
+                        ><i class="ion-navicon-round"></i
+                    ></a>
                 </div>
             </nav>
             <div class="hero-text-box">
-                <h1>
-                    Goodbye junk food. <br />
-                    Hello super healthy meals.
-                </h1>
-                <a class="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#plans"
+                    >I'm hungry</a
+                >
+                <a class="btn btn-ghost js--scroll-to-start" href="#features"
+                    >Show me more</a
+                >
             </div>
         </header>
-        <section class="section-features">
+
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
-                    Hello, we’re Omnifood, your new premium food delivery
-                    service. We know you’re always busy. No time for cooking. So
-                    let us take care of that, we’re really good at it, we
+                    Hello, we're Omnifood, your new premium food delivery
+                    service. We know you're always busy. No time for cooking. So
+                    let us take care of that, we're really good at it, we
                     promise!
                 </p>
             </div>
-            <div class="row">
+
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -105,13 +103,14 @@
                 </div>
             </div>
         </section>
+
         <section class="section-meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
                         <img
                             src="resources/img/1.jpg"
-                            alt="Korean bibimbap with egg and vegetables"
+                            alt="Korean bibimbap with egg and vegetables"
                         />
                     </figure>
                 </li>
@@ -127,7 +126,7 @@
                     <figure class="meal-photo">
                         <img
                             src="resources/img/3.jpg"
-                            alt="Chicken breast steak with vegetables "
+                            alt="Chicken breast steak with vegetables"
                         />
                     </figure>
                 </li>
@@ -175,58 +174,61 @@
                 </li>
             </ul>
         </section>
-        <section class="section-steps">
+
+        <section class="section-steps" id="works">
             <div class="row">
-                <h2>How it works - Simple as 1, 2, 3</h2>
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
                     <img
                         src="resources/img/app-iPhone.png"
                         alt="Omnifood app on iPhone"
-                        class="app-screen"
+                        class="app-screen js--wp-2"
                     />
                 </div>
                 <div class="col span-1-of-2 steps-box">
-                    <div class="works-step">
+                    <div class="works-step clearfix">
                         <div>1</div>
-                        <p>
-                            Order your delicious meal using our mobile app or
-                            website. Or you can even call us!
-                        </p>
-                    </div>
-                    <div class="works-step">
-                        <div>2</div>
                         <p>
                             Choose the subscription plan that best fits your
                             needs and sign up today.
                         </p>
                     </div>
-                    <div class="works-step">
+                    <div class="works-step clearfix">
+                        <div>2</div>
+                        <p>
+                            Order your delicious meal using our mobile app or
+                            website. Or you can even call us!
+                        </p>
+                    </div>
+                    <div class="works-step clearfix">
                         <div>3</div>
                         <p>
                             Enjoy your meal after less than 20 minutes. See you
                             the next time!
                         </p>
                     </div>
-                    <a href="#" class="btn-app">
-                        <img
+
+                    <a href="#" class="btn-app"
+                        ><img
                             src="resources/img/download-app.svg"
                             alt="App Store Button"
                     /></a>
-                    <a href="#" class="btn-app">
-                        <img
+                    <a href="#" class="btn-app"
+                        ><img
                             src="resources/img/download-app-android.png"
                             alt="Play Store Button"
                     /></a>
                 </div>
             </div>
         </section>
-        <section class="section-cities">
+
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/lisbon-3.jpg" alt="Lisbon" />
                     <h3>Lisbon</h3>
@@ -235,7 +237,7 @@
                         1600+ happy eaters
                     </div>
                     <div class="city-feature">
-                        <i class="ion-ribbon-b icon-small"> </i>
+                        <i class="ion-ios-star icon-small"></i>
                         60+ top chefs
                     </div>
                     <div class="city-feature">
@@ -254,7 +256,8 @@
                         3700+ happy eaters
                     </div>
                     <div class="city-feature">
-                        <i class="ion-ribbon-b icon-small"></i>160+ top chefs
+                        <i class="ion-ios-star icon-small"></i>
+                        160+ top chefs
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -265,11 +268,12 @@
                     <img src="resources/img/berlin.jpg" alt="Berlin" />
                     <h3>Berlin</h3>
                     <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>2300+ happy
-                        eaters
+                        <i class="ion-ios-person icon-small"></i>
+                        2300+ happy eaters
                     </div>
                     <div class="city-feature">
-                        <i class="ion-ribbon-b icon-small"></i>110+ top chefs
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ top chefs
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -280,11 +284,12 @@
                     <img src="resources/img/london.jpg" alt="London" />
                     <h3>London</h3>
                     <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>1200+ happy
-                        eaters
+                        <i class="ion-ios-person icon-small"></i>
+                        1200+ happy eaters
                     </div>
                     <div class="city-feature">
-                        <i class="ion-ribbon-b icon-small"></i>50+ top chefs
+                        <i class="ion-ios-star icon-small"></i>
+                        50+ top chefs
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -293,103 +298,94 @@
                 </div>
             </div>
         </section>
+
         <section class="section-testimonials">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="testimonial-feature">
-                        <blockquote>
-                            Omnifood is just awesome! I just launched a startup
-                            which leaves me with no time for cooking, so
-                            Omnifood is a life-saver. Now that I got used to it,
-                            I couldn't live without my daily meals!
-                            <cite>
-                                <img
-                                    src="resources/img/customer-1.jpg"
-                                    alt="Alberto Duncan"
-                                />
-                                Alberto Duncan
-                            </cite>
-                        </blockquote>
-                    </div>
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup
+                        which leaves me with no time for cooking, so Omnifood is
+                        a life-saver. Now that I got used to it, I couldn't live
+                        without my daily meals!
+                        <cite
+                            ><img
+                                src="resources/img/customer-1.jpg"
+                                alt="Customer 1 photo"
+                            />Alberto Duncan</cite
+                        >
+                    </blockquote>
                 </div>
                 <div class="col span-1-of-3">
-                    <div class="testimonial-feature">
-                        <blockquote>
-                            Inexpensive, healthy and great-tasting meals,
-                            delivered right to my home. We have lots of food
-                            delivery here in Lisbon, but no one comes even close
-                            to Omifood. Me and my family are so in love!
-                            <cite>
-                                <img
-                                    src="resources/img/customer-2.jpg"
-                                    alt="Joana Silva"
-                                />
-                                Joana Silva
-                            </cite>
-                        </blockquote>
-                    </div>
+                    <blockquote>
+                        Inexpensive, healthy and great-tasting meals, delivered
+                        right to my home. We have lots of food delivery here in
+                        Lisbon, but no one comes even close to Omifood. Me and
+                        my family are so in love!
+                        <cite
+                            ><img
+                                src="resources/img/customer-2.jpg"
+                                alt="Customer 2 photo"
+                            />Joana Silva</cite
+                        >
+                    </blockquote>
                 </div>
                 <div class="col span-1-of-3">
-                    <div class="testimonial-feature">
-                        <blockquote>
-                            I was looking for a quick and easy food delivery
-                            service in San Franciso. I tried a lot of them and
-                            ended up with Omnifood. Best food delivery service
-                            in the Bay Area. Keep up the great work!
-                            <cite>
-                                <img
-                                    src="resources/img/customer-3.jpg"
-                                    alt="Milton Chapman"
-                                />
-                                Milton Chapman
-                            </cite>
-                        </blockquote>
-                    </div>
+                    <blockquote>
+                        I was looking for a quick and easy food delivery service
+                        in San Franciso. I tried a lot of them and ended up with
+                        Omnifood. Best food delivery service in the Bay Area.
+                        Keep up the great work!
+                        <cite
+                            ><img
+                                src="resources/img/customer-3.jpg"
+                                alt="Customer 3 photo"
+                            />Milton Chapman</cite
+                        >
+                    </blockquote>
                 </div>
             </div>
         </section>
-        <!-- PRICING PLANS -->
-        <section class="section-plans">
-            <!-- HEADER -->
+
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
-                <h2>Start eating healthy today</h2>
+                <h2>Start eating healthy today</h2>
             </div>
-            <!-- PLANS -->
             <div class="row">
-                <!-- PLAN 1 -->
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">$399 <span>/ month</span></p>
-                            <p class="plan-meal">That’s only $13.30 per meal</p>
+                            <p class="plan-price-meal">
+                                That's only 13.30$ per meal
+                            </p>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >1 meal every day
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Order 24/7
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Access to newest creations
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Free delivery
                                 </li>
@@ -400,37 +396,38 @@
                         </div>
                     </div>
                 </div>
-                <!-- PLAN 2 -->
                 <div class="col span-1-of-3">
                     <div class="plan-box">
                         <div>
                             <h3>Pro</h3>
                             <p class="plan-price">$149 <span>/ month</span></p>
-                            <p class="plan-meal">That’s only $14.90 per meal</p>
+                            <p class="plan-price-meal">
+                                That's only 14.90$ per meal
+                            </p>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >1 meal 10 days/month
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Order 24/7
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Access to newest creations
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Free delivery
                                 </li>
@@ -441,36 +438,35 @@
                         </div>
                     </div>
                 </div>
-                <!-- PLAN 3 -->
                 <div class="col span-1-of-3">
                     <div class="plan-box">
                         <div>
                             <h3>Starter</h3>
-                            <p class="plan-price">$19 <span>/ meal</span></p>
-                            <p class="plan-meal">&nbsp;</p>
+                            <p class="plan-price">19$ <span>/ meal</span></p>
+                            <p class="plan-price-meal">&nbsp;</p>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >1 meal
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Order from 8 am to 12 pm
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline-blank icon-small"
+                                        class="ion-ios-close-empty icon-small"
                                     ></i>
                                 </li>
                                 <li>
                                     <i
-                                        class="ion-android-checkbox-outline icon-small"
+                                        class="ion-ios-checkmark-empty icon-small"
                                     ></i
                                     >Free delivery
                                 </li>
@@ -483,115 +479,117 @@
                 </div>
             </div>
         </section>
-        <section class="section-form">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
+
+        <div class="map-box">
+            <div class="map"></div>
+
+            <div class="form-box" id="form">
+                <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+
+                <div class="row">
+                    <form
+                        method="post"
+                        action="mailer.php"
+                        class="contact-form"
+                    >
+                        <div class="row"></div>
+
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Your name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Your email"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="find-us"
+                                    >How did you find us?</label
+                                >
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="find-us" id="find-us">
+                                    <option value="friends" selected>
+                                        Friends
+                                    </option>
+                                    <option value="search">
+                                        Search engine
+                                    </option>
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="news">Newsletter?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input
+                                    type="checkbox"
+                                    name="news"
+                                    id="news"
+                                    checked
+                                />
+                                Yes, please
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea
+                                    name="message"
+                                    placeholder="Your message"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="row">
-                <form action="#" method="POST" class="contact-form">
-                    <!-- Name -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Your Name"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <!-- Email -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input
-                                type="email"
-                                name="email"
-                                id="name"
-                                placeholder="Your Email"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <!-- Find Us -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>How did you Find Us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends">Word of Mouth</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="seo" selected>
-                                    Through a Search Engine
-                                </option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Newsletter -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label
-                                >Would you like to receive our
-                                newsletter?</label
-                            >
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" /> Yes
-                            Please!
-                        </div>
-                    </div>
-                    <!-- Drop a Line -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea
-                                name="message"
-                                placeholder="Your Message"
-                                id="message"
-                            ></textarea>
-                        </div>
-                    </div>
-                    <!-- Submit -->
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send" />
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
+        </div>
+
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li>
-                            <a href="#"> About Us </a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Press</a>
-                        </li>
-                        <li>
-                            <a href="#">iOS App</a>
-                        </li>
-                        <li>
-                            <a href="#">Andriod App</a>
-                        </li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -604,8 +602,8 @@
                         </li>
                         <li>
                             <a href="#"
-                                ><i class="ion-social-googleplus"></i>
-                            </a>
+                                ><i class="ion-social-googleplus"></i
+                            ></a>
                         </li>
                         <li>
                             <a href="#"><i class="ion-social-instagram"></i></a>
@@ -614,38 +612,28 @@
                 </div>
             </div>
             <div class="row">
-                <p>Copyright &copy; by Omnifood. All Rights Reserved</p>
+                <p>Copyright &copy; 2015 by Omnifood. All rights reserved.</p>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"
-            integrity="sha512-BWbLJlfp8hzXlxT6K5KLdxPVAj+4Zn2e4FVq5P7NSFH/mkAJ18UiZRQUD4anR3jyp0/WYkeZ0Zmq5EWWrDxneQ=="
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
-            integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA=="
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Selectivity.js/2.1.0/selectivity-full.min.js"
-            integrity="sha512-bDMHSYDUWaLb5eReEK8nNqxuYf8YEG9LQUH0aONmBvkhrEnBz6O2lc5+3XK7+bFYYtunLo8pZiJm8X9iMxpH+Q=="
-            crossorigin="anonymous"
-        ></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/scripts.js">
 
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <!-- <script src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
+        <script src="resources/js/script.js"></script>
+        <!-- <script src="resources/js/gmaps.js"></script> -->
+
+        <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
     </body>
 </html>
-
-<!-- Section 7: Contact form
-Title: We're happy to hear from you
-
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line -->
